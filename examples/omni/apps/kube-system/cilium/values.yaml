@@ -2,6 +2,12 @@ cilium:
   kubeProxyReplacement: true
   ipam:
     mode: kubernetes
+  rollOutCiliumPods: true
+  bgpControlPlane:
+    enabled: true
+  bgp:
+    announce:
+      loadbalancerIP: true
   securityContext:
     capabilities:
       ciliumAgent:
