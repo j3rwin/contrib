@@ -6,6 +6,8 @@ kubernetes:
   version: 1.29.4
 features:
   enableWorkloadProxy: true
+systemExtensions:
+  - siderolabs/xen-guest-agent
 patches:
   - name: cni
     file: patches/cni.yaml
